@@ -11,17 +11,18 @@
 #         Solution
 # ========================
 
-X = int(input())
-Y = int(input())
-Z = int(input())
-N = int(input())
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
 
-RESULT = []
+ans = []
 
-for a in range(0, X + 1):
-    for b in range(0, Y + 1):
-        for c in range(0, Z + 1):
-            if (a + b + c) != N:
-                RESULT.append([a, b, c])
+for a in range(0, x + 1):
+    for b in range(0, y + 1):
+        for c in range(0, z + 1):
+            if (a + b + c) != n:
+                ans.append([a, b, c])
 
-print(RESULT)
+print(ans)
